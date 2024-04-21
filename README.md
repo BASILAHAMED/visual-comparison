@@ -27,7 +27,7 @@ Read through [RELEASE_NOTES](RELEASE_NOTES.md).
 ```python
 numpy
 opencv-python
-skimage
+scikit-image
 ```
 
 #### To compare two images programmatically
