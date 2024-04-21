@@ -7,7 +7,7 @@ from ImageComparisonUtil import ImageComparisonUtil
 expected_image = ImageComparisonUtil.read_image_from_resources("expected.png")
 actual_image = ImageComparisonUtil.read_image_from_resources("actual.png")
 
-# Where to save the result (leave None if you want to see the result in the UI)
+# Where to save the result 
 result_destination = "result.png"
 
 # Compare the images and save result.png
