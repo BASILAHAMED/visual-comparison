@@ -31,7 +31,7 @@ scikit-image
 ```
 
 #### To compare two images programmatically
-##### The default way to compare two images looks like:
+#### 1. To get similarity index:
 ```python
     # Using ImageComparisonUtil
     # Load images to be compared
@@ -46,6 +46,20 @@ scikit-image
     print("Similarity Index:", similarity_index)
 ```
 
+#### 2. To assert match/mismatch:
+```python
+    # Using ImageComparisonUtil
+    # Load images to be compared
+    expected_image = ImageComparisonUtil.read_image_from_resources("expected.png")
+    actual_image = ImageComparisonUtil.read_image_from_resources("actual.png")
+    
+    # Where to save the result 
+    result_destination = "result.png"
+    
+    # Asserting both images
+    match_result = ImageComparisonUtil.check_match(expected_image, actual_image)
+    assert match_result
+```
 
 ## Demo
 Demo shows how `image-comparison` works.
