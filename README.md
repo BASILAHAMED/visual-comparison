@@ -65,12 +65,12 @@ scikit-image
 Demo shows how `image-comparison` works.
 
 ### Expected Image
-![expected](https://user-images.githubusercontent.com/16310793/28955567-52edeabe-78f0-11e7-8bb2-d435c8df23ff.png)
+![expected](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/expected.png)
 
 ### Actual Image
-![actual](https://user-images.githubusercontent.com/16310793/28955566-52ead892-78f0-11e7-993c-847350da0bf8.png)
+![actual](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/actual.png)
 
 ### Result
-![result](https://user-images.githubusercontent.com/16310793/28955568-52f23e02-78f0-11e7-92c5-07602b6a0887.png)
+![result](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/result.png)
 
 #### Thanks Team
