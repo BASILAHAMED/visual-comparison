@@ -10,29 +10,10 @@ actual_image = ImageComparisonUtil.read_image_from_resources("actual.png")
 # Where to save the result 
 result_destination = "result.png"
 
+# Assert image match
+match_result = ImageComparisonUtil.check_match(expected_image, actual_image)
+assert match_result
+
 # Compare the images and save result.png
 similarity_index = ImageComparisonUtil.compare_images(expected_image, actual_image, result_destination)
 print("Similarity Index:", similarity_index)
-
-# =================================================>
-
-
-# Using ImageComparison - Method II
-
-# expected_image = ImageComparisonUtil.read_image_from_resources("expected.png")
-# actual_image = ImageComparisonUtil.read_image_from_resources("actual.png")
-
-# Where to save the result
-# result_destination = "result.png"
-
-# # Create an instance of ImageComparison
-# image_comparison = ImageComparison(expected_image, actual_image, result_destination)
-
-# # Compare the images
-# comparison_result = image_comparison.compare_images()
-
-# # Print the difference percentage
-# print("Difference percentage:", comparison_result['difference_percent'])
-
-
-# =================================================>
