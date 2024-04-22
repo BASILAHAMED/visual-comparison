@@ -1,8 +1,9 @@
+
 # Release Notes
+## Version 1.0
+**Key Features:**
+* Developed in Python, this program facilitates the comparison of any two images, visually highlighting their differences through the drawing of rectangles.
+* Implementation exclusively relies on standard core language and platform features; no third-party libraries are utilized.
+* The resulting image is a copy of one of the actual images, with variations delineated by red rectangles.
 
-## 1.0
-*   The program in Python that compares any 2 images and shows the differences visually by drawing rectangles.*
-
-*   Implementation is using only standard core language and platform features, No third-party libraries are used.
-
-*   The resulting image is a copy of one of the actual images with differences outlined with red rectangles as shown below.
+This initial release provides a foundational framework for efficiently identifying disparities between images, catering to a wide array of applications including quality assurance, image processing, and automated testing.
