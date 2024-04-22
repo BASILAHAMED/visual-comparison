@@ -11,11 +11,13 @@
 *   [Demo](#demo)
 
 ## About
-Developed with Python - Opencv Library that compares two images with the same sizes and shows the differences visually by drawing rectangles. Some parts of the image can be excluded from the comparison. Can be used for automation QA tests. 
+Developed in Python utilizing the OpenCV library, this program compares two images of identical sizes, visually highlighting their differences by drawing red rectangles. Offering flexibility for various automation Quality Assurance (QA) tests, especially visual regression testing.
 
-*   Implementation is using only standard core python language and specific modules.
+**Key Features:**
 
-*   The output of the comparison is a copy of `actual` images. The differences are outlined with red rectangles as shown below.
+* Utilizes standard Python language and specific modules for implementation.
+* Generates an output comprising copies of the 'actual' images, with discrepancies delineated by red rectangles.
+* This tool serves as a valuable asset for automated visual regression testing, facilitating precise visual comparisons to ensure the integrity and accuracy of image-based applications.
 
 ## Release Notes
 
