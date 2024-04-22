@@ -1,6 +1,6 @@
 
 
-![logo-trans](https://user-images.githubusercontent.com/16310793/42029324-df117c42-7ad7-11e8-8d3e-9c6cd8822d6c.png)
+![logo-trans](https://github.com/BASILAHAMED/visual-comparison/blob/main/logo.png)
 
 *   [About](#about)
 
