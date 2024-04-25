@@ -64,7 +64,7 @@ scikit-image
 ```
 
 ## Demo
-Demo shows how `image-comparison` works.
+1. Demo shows how **`image-comparison`** works.
 
 ### Expected Image
 ![expected](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/expected.png)
@@ -76,7 +76,7 @@ Demo shows how `image-comparison` works.
 ![result](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/result.png)
 
 
-Demo shows how `colour-comparison` works.
+2. Demo shows how **`colour-comparison`** works.
 ### Expected Image
 ![expected](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/colour%20comparison/expected.png)
 
