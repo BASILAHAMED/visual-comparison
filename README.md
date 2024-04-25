@@ -75,4 +75,15 @@ Demo shows how `image-comparison` works.
 ### Result
 ![result](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/result.png)
 
+
+Demo shows how `colour-comparison` works.
+### Expected Image
+![expected](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/colour%20comparison/expected.png)
+
+### Actual Image
+![actual](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/colour%20comparison/actual.png)
+
+### Result
+![result](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/colour%20comparison/result.png)
+
 #### Thanks Team
