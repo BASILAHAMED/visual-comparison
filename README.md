@@ -86,4 +86,3 @@ scikit-image
 ### Result
 ![result](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/colour%20comparison/result.png)
 
-#### Thanks Team
