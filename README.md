@@ -70,7 +70,7 @@ scikit-image
 ![expected](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/expected.png)
 
 ### Actual Image
-![actual](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/actual.png)
+![actual](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/actual.png) 
 
 ### Result
 ![result](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/result.png)
