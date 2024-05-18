@@ -1,17 +1,4 @@
-
-
 ![logo-trans](https://github.com/BASILAHAMED/visual-comparison/blob/main/logo.png)
-<p align="center">
-    <a href="https://github.com/badboysm890/clara-term/issues">
-        <img alt="GitHub issues" src="https://img.shields.io/github/issues/BASILAHAMED/visual-comparison"/></a>
-    <a href="LICENSE">
-        <img alt="License" src="https://img.shields.io/github/license/BASILAHAMED/visual-comparison"/></a>
-    <br>
-    <b>Visual Comparison: Leading the AI-Driven Evolution in Terminal Technology</b><br>
-    Transforming terminal automation with advanced AI, paving the way for an AI-operated OS.<br>
-    <br>
-</p>
-
 *   [About](#about)
 
 *   [Release Notes](#release-notes)
