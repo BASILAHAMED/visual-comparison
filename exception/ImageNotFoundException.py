@@ -7,6 +7,6 @@ class ImageNotFoundException(Exception):
         """
         Initializes a new ImageNotFoundException with the specified detail message.
 
-        :param message: The detail message. The detail message is saved for later retrieval.
+        : param message: The detail message. The detail message is saved for later retrieval.
         """
         super().__init__(message)
