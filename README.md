@@ -29,7 +29,7 @@ opencv-python
 scikit-image
 ```
 
-#### To compare two images programmatically
+## To compare two images programmatically
 #### 1. To get similarity index:
 ```python
     # Using ImageComparisonUtil
