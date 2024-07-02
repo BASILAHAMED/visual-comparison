@@ -79,7 +79,7 @@ scikit-image
 
 2. Demo shows how **`colour comparison`** works.
 ### Expected Image
-![expected](https://github.com/BASILAHAMED/visual-comparison/blob/main/sample_images/colour%20comparison/expected.png)
+![expected](https://github.com/BASILAHAMED/visual-comparison/blob/main/sample_images/colour%20comparison/expected.jpg)
 
 ### Actual Image
 ![actual](https://github.com/BASILAHAMED/visual-comparison/blob/main/sample_images/colour%20comparison/actual.png)
