@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-from image_comparison.exceptions import ImageComparisonException,ImageNotFoundException
+from visual_comparison.exceptions import ImageComparisonException,ImageNotFoundException
 from skimage.metrics import structural_similarity as ssim
 
 class ImageComparisonUtil:

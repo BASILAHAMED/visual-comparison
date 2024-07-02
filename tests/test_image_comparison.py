@@ -1,6 +1,6 @@
 import unittest
-from image_comparison.exceptions import ImageNotFoundException
-from image_comparison.image_comparison_util import ImageComparisonUtil
+from visual_comparison.exceptions import ImageNotFoundException
+from visual_comparison.visual_comparison_util import ImageComparisonUtil
 
 class TestImageComparisonUtil(unittest.TestCase):
     def test_read_image_from_resources(self):

@@ -1,4 +1,4 @@
-from image_comparison.image_comparison_util import ImageComparisonUtil
+from visual_comparison.visual_comparison_util import ImageComparisonUtil
 
 
 # Using ImageComparisonUtil - Verify image match/mismatch
