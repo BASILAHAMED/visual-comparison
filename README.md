@@ -36,7 +36,7 @@ scikit-image
 [Get Similarity Index](https://github.com/BASILAHAMED/visual-comparison/blob/main/get_similarity_index.py)
 
 ```python
-    # Using ImageComparisonUtil
+    # Using ImageComparisonUtil to get similaity index and compared output image
     # Load images to be compared
     expected_image = ImageComparisonUtil.read_image_from_resources("expected.png")
     actual_image = ImageComparisonUtil.read_image_from_resources("actual.png")
@@ -44,7 +44,7 @@ scikit-image
     # Where to save the result 
     result_destination = "result.png"
     
-    # Compare the images and save result.png
+    # Compare the images and save it as result.png
     similarity_index = ImageComparisonUtil.compare_images(expected_image, actual_image, result_destination)
     print("Similarity Index:", similarity_index)
 ```
@@ -58,9 +58,6 @@ scikit-image
     # Load images to be compared
     expected_image = ImageComparisonUtil.read_image_from_resources("expected.png")
     actual_image = ImageComparisonUtil.read_image_from_resources("actual.png")
-    
-    # Where to save the result 
-    result_destination = "result.png"
     
     # Asserting both images
     match_result = ImageComparisonUtil.check_match(expected_image, actual_image)
