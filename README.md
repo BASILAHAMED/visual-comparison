@@ -29,7 +29,8 @@ opencv-python
 scikit-image
 ```
 
-## To compare two images programmatically
+## To compare two images through visual-comparison module
+![ref file](https://github.com/BASILAHAMED/visual-comparison/blob/main/get_similarity_index.py)
 #### 1. To get similarity index:
 ```python
     # Using ImageComparisonUtil
