@@ -51,7 +51,7 @@ scikit-image
 
 #### 2. Sample Code to assert match/mismatch:
 
-[Assert Match/Mismatch](https://github.com/BASILAHAMED/visual-comparison/blob/main/get_similarity_index.py)
+[Assert Match/Mismatch](https://github.com/BASILAHAMED/visual-comparison/blob/main/asserting_match.py)
 
 ```python
     # Using ImageComparisonUtil
