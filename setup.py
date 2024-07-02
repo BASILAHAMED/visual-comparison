@@ -9,7 +9,7 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
 
 setup(
     name="visual-comparison",
-    version="1.0.2.5",
+    version="1.0.2.7",
     description="Image Comparison Tool",
     long_description=long_description,
     long_description_content_type="text/markdown",

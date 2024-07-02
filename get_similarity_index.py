@@ -1,10 +1,9 @@
-from visual_comparison.visual_comparison_util import ImageComparisonUtil
-
+from visual_comparison.utils import ImageComparisonUtil
 
 # Using ImageComparisonUtil - Get similarity index
 # Load images to be compared
-expected_image = ImageComparisonUtil.read_image_from_resources("sample_images\\basic comparison\\expected.png")
-actual_image = ImageComparisonUtil.read_image_from_resources("sample_images\\basic comparison\\actual.png")
+expected_image = ImageComparisonUtil.read_image("sample_images\\basic comparison\\expected.png")
+actual_image = ImageComparisonUtil.read_image("sample_images\\basic comparison\\actual.png")
 
 # Choose the path to save the result 
 result_destination = "result.png"

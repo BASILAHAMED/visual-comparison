@@ -5,7 +5,7 @@ from skimage.metrics import structural_similarity as ssim
 
 class ImageComparisonUtil:
     @staticmethod
-    def read_image_from_resources(path):
+    def read_image(path):
         try:
             image = cv2.imread(path)
             if image is None:
