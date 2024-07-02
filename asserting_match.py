@@ -7,12 +7,12 @@ expected_image = ImageComparisonUtil.read_image_from_resources("sample_images\\b
 actual_image = ImageComparisonUtil.read_image_from_resources("sample_images\\basic comparison\\actual.png")
 
 
-# Assert image match, if image mismatches throws assertion error
+# Assert image match using check_match method
 match_result = ImageComparisonUtil.check_match(expected_image, actual_image)
 assert match_result
 
 
-# Assert image mismatch, if image matches throws assertion error
+# Assert image mismatch using check_mismatch method
 mismatch_result = ImageComparisonUtil.check_mismatch(expected_image, actual_image)
 assert mismatch_result
 
