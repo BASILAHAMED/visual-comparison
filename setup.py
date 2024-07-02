@@ -9,7 +9,7 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
 
 setup(
     name="visual-comparison",
-    version="1.0.2.7",
+    version="1.0.2.8",
     description="Image Comparison Tool",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -23,7 +23,6 @@ setup(
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3 :: Only",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
