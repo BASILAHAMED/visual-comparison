@@ -65,25 +65,25 @@ scikit-image
 ```
 
 ## Demo
-1. Demo shows how **`image-comparison`** works.
+1. Demo shows how **`basic image comparison`** works.
 
 ### Expected Image
-![expected](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/expected.png)
+![expected](https://github.com/BASILAHAMED/visual-comparison/blob/main/sample_images/basic%20comparison/expected.png)
 
 ### Actual Image
-![actual](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/actual.png) 
+![actual](https://github.com/BASILAHAMED/visual-comparison/blob/main/sample_images/basic%20comparison/actual.png) 
 
 ### Result
-![result](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/result.png)
+![result](https://github.com/BASILAHAMED/visual-comparison/blob/main/sample_images/basic%20comparison/result.png)
 
 
-2. Demo shows how **`colour-comparison`** works.
+2. Demo shows how **`colour comparison`** works.
 ### Expected Image
-![expected](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/colour%20comparison/expected.png)
+![expected](https://github.com/BASILAHAMED/visual-comparison/blob/main/sample_images/colour%20comparison/expected.png)
 
 ### Actual Image
-![actual](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/colour%20comparison/actual.png)
+![actual](https://github.com/BASILAHAMED/visual-comparison/blob/main/sample_images/colour%20comparison/actual.png)
 
 ### Result
-![result](https://github.com/BASILAHAMED/visual-comparison/blob/main/images/colour%20comparison/result.png)
+![result](https://github.com/BASILAHAMED/visual-comparison/blob/main/sample_images/colour%20comparison/result.png)
 
