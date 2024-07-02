@@ -30,8 +30,11 @@ scikit-image
 ```
 
 ## To compare two images through visual-comparison module
-[ref file](https://github.com/BASILAHAMED/visual-comparison/blob/main/get_similarity_index.py)
-#### 1. To get similarity index:
+
+#### 1. Sample Code to get Similarity Index:
+
+[Get Similarity Index](https://github.com/BASILAHAMED/visual-comparison/blob/main/get_similarity_index.py)
+
 ```python
     # Using ImageComparisonUtil
     # Load images to be compared
@@ -46,7 +49,10 @@ scikit-image
     print("Similarity Index:", similarity_index)
 ```
 
-#### 2. To assert match/mismatch:
+#### 2. Sample Code to assert match/mismatch:
+
+[Assert Match/Mismatch](https://github.com/BASILAHAMED/visual-comparison/blob/main/get_similarity_index.py)
+
 ```python
     # Using ImageComparisonUtil
     # Load images to be compared
