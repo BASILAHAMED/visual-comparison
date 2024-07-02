@@ -1,24 +1,13 @@
-![logo-trans](https://github.com/BASILAHAMED/visual-comparison/blob/main/logo.png)
-*   [About](#about)
-
-*   [Release Notes](#release-notes)
-
-*   [Usage](#usage)
-
-*   [Demo](#demo)
+![logo-trans](https://github.com/BASILAHAMED/visual-comparison/raw/main/logo.png)
 
 ## About
-Developed in Python utilizing the OpenCV library, this program compares two images of identical sizes, visually highlighting their differences by drawing red rectangles. Offering flexibility for various automation Quality Assurance (QA) tests, especially visual regression testing.
+Developed with Python utilizing the OpenCV library, this program compares two images of identical sizes, visually highlighting their differences by drawing red rectangles. Offering flexibility for various automation Quality Assurance (QA) tests, especially visual regression testing.
 
 **Key Features:**
 
 * Utilizes standard Python language and specific modules for implementation.
 * Generates an output comprising copies of the 'actual' images, with discrepancies delineated by red rectangles.
 * This tool serves as a valuable asset for automated visual regression testing, facilitating precise visual comparisons to ensure the integrity and accuracy of image-based applications. 
-
-## Release Notes
-
-Read through [RELEASE_NOTES](RELEASE_NOTES.md). 
 
 ## Usage
 
@@ -33,10 +22,10 @@ scikit-image
 
 #### 1. Sample Code to get Similarity Index:
 
-[Get Similarity Index](https://github.com/BASILAHAMED/visual-comparison/blob/main/get_similarity_index.py)
+[Get Similarity Index](https://github.com/BASILAHAMED/visual-comparison/raw/main/get_similarity_index.py)
 
 ```python
-    # Using ImageComparisonUtil to get similaity index and compared output image
+    # Using ImageComparisonUtil to get similarity index and compare output image
     # Load images to be compared
     expected_image = ImageComparisonUtil.read_image_from_resources("expected.png")
     actual_image = ImageComparisonUtil.read_image_from_resources("actual.png")
@@ -68,22 +57,22 @@ scikit-image
 1. Demo shows how **`basic image comparison`** works.
 
 ### Expected Image
-![expected](https://github.com/BASILAHAMED/visual-comparison/blob/main/sample_images/basic%20comparison/expected.png)
+![expected](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/basic%20comparison/expected.png)
 
 ### Actual Image
-![actual](https://github.com/BASILAHAMED/visual-comparison/blob/main/sample_images/basic%20comparison/actual.png) 
+![actual](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/basic%20comparison/actual.png) 
 
 ### Result
-![result](https://github.com/BASILAHAMED/visual-comparison/blob/main/sample_images/basic%20comparison/result.png)
+![result](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/basic%20comparison/result.png)
 
 
 2. Demo shows how **`colour comparison`** works.
 ### Expected Image
-![expected](https://github.com/BASILAHAMED/visual-comparison/blob/main/sample_images/colour%20comparison/expected.jpg)
+![expected](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/colour%20comparison/expected.jpg)
 
 ### Actual Image
-![actual](https://github.com/BASILAHAMED/visual-comparison/blob/main/sample_images/colour%20comparison/actual.png)
+![actual](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/colour%20comparison/actual.png)
 
 ### Result
-![result](https://github.com/BASILAHAMED/visual-comparison/blob/main/sample_images/colour%20comparison/result.png)
+![result](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/colour%20comparison/result.png)
 
