@@ -18,7 +18,7 @@ Developed in Python utilizing the OpenCV library, this program compares two imag
 
 ## Release Notes
 
-Read through [RELEASE_NOTES](RELEASE_NOTES.md).
+Read through [RELEASE_NOTES](RELEASE_NOTES.md). 
 
 ## Usage
 
