@@ -22,7 +22,7 @@ scikit-image
 
 #### 1. Sample Code to get Similarity Index:
 
-[Get Similarity Index](https://github.com/BASILAHAMED/visual-comparison/raw/main/get_similarity_index.py)
+[Get Similarity Index](https://github.com/BASILAHAMED/visual-comparison/blob/main/get_similarity_index.py)
 
 ```python
     # Using ImageComparisonUtil to get similarity index and compare output image
