@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+tests/test_image_comparison.py
+visual_comparison/__init__.py
+visual_comparison/exceptions.py
+visual_comparison/utils.py
+visual_comparison.egg-info/PKG-INFO
+visual_comparison.egg-info/SOURCES.txt
+visual_comparison.egg-info/dependency_links.txt
+visual_comparison.egg-info/not-zip-safe
+visual_comparison.egg-info/requires.txt
+visual_comparison.egg-info/top_level.txt
