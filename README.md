@@ -14,7 +14,7 @@ Developed in Python utilizing the OpenCV library, this program compares two imag
 
 * Utilizes standard Python language and specific modules for implementation.
 * Generates an output comprising copies of the 'actual' images, with discrepancies delineated by red rectangles.
-* This tool serves as a valuable asset for automated visual regression testing, facilitating precise visual comparisons to ensure the integrity and accuracy of image-based applications.
+* This tool serves as a valuable asset for automated visual regression testing, facilitating precise visual comparisons to ensure the integrity and accuracy of image-based applications. 
 
 ## Release Notes
 
