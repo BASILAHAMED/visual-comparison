@@ -11,11 +11,9 @@ Developed with Python utilizing the OpenCV library, this program compares two im
 
 ## Usage
 
-#### Modules Required
+#### Installation
 ```python
-numpy
-opencv-python
-scikit-image
+pip install visual-comparison
 ```
 
 ## To compare two images through visual-comparison module
