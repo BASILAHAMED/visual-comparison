@@ -23,12 +23,12 @@ pip install visual-comparison
 [Get Similarity Index](https://github.com/BASILAHAMED/visual-comparison/blob/main/get_similarity_index.py)
 
 ```python
-    # Using ImageComparisonUtil to get similarity index and compare output image
+    # Using ImageComparisonUtil to get similarity index and save output image as result.png
     # Load images to be compared
-    expected_image = ImageComparisonUtil.read_image_from_resources("expected.png")
-    actual_image = ImageComparisonUtil.read_image_from_resources("actual.png")
+    expected_image = ImageComparisonUtil.read_image("expected.png")
+    actual_image = ImageComparisonUtil.read_image("actual.png")
     
-    # Where to save the result 
+    # Provide the path to save output image
     result_destination = "result.png"
     
     # Compare the images and save it as result.png
@@ -43,8 +43,8 @@ pip install visual-comparison
 ```python
     # Using ImageComparisonUtil
     # Load images to be compared
-    expected_image = ImageComparisonUtil.read_image_from_resources("expected.png")
-    actual_image = ImageComparisonUtil.read_image_from_resources("actual.png")
+    expected_image = ImageComparisonUtil.read_image("expected.png")
+    actual_image = ImageComparisonUtil.read_image("actual.png")
     
     # Asserting both images
     match_result = ImageComparisonUtil.check_match(expected_image, actual_image)
