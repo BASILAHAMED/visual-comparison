@@ -74,3 +74,6 @@ pip install visual-comparison
 ### Result
 ![result](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/colour%20comparison/result.png)
 
+### Support and Contributions
+If you find this project useful, please consider giving it a star! ⭐ Your support is greatly appreciated. If you have any ideas for improvements or would like to contribute, we welcome your input and collaboration. Feel free to open an issue or submit a pull request. Thanks for your support!
+
