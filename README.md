@@ -31,7 +31,7 @@ pip install visual-comparison
     # Provide the path to save output image
     result_destination = "result.png"
     
-    # Compare the images and save it as result.png
+    # Compare the images, print the similarity index and save it as result.png
     similarity_index = ImageComparisonUtil.compare_images(expected_image, actual_image, result_destination)
     print("Similarity Index:", similarity_index)
 ```
