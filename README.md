@@ -1,5 +1,10 @@
 ![logo-trans](https://github.com/BASILAHAMED/visual-comparison/raw/main/logo.png)
 
+[![PyPI version](https://badge.fury.io/py/visual-comparison.svg)](https://badge.fury.io/py/visual-comparison)
+![Python](https://img.shields.io/badge/Python-Selenium-blue)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BASILAHAMED/visual-comparison/pulls)
+[![License](https://img.shields.io/github/license/BASILAHAMED/visual-comparison.svg)](https://github.com/BASILAHAMED/visual-comparison/blob/main/LICENSE)
+
 ## About
 Developed with Python utilizing the OpenCV library, this program compares two images of identical sizes, visually highlighting their differences by drawing red rectangles. Offering flexibility for various automation Quality Assurance (QA) tests, especially visual regression testing.
 
