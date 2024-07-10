@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-from visual_comparison.exceptions import ImageComparisonException,ImageNotFoundException
+from visual_comparison.exceptions import ImageComparisonException, ImageNotFoundException
 from skimage.metrics import structural_similarity as ssim
 
 class ImageComparisonUtil:
@@ -21,7 +21,7 @@ class ImageComparisonUtil:
         except Exception as e:
             raise ImageComparisonException(f"Cannot save image to path={path}", e)
 
-    # show difference as B/W Image
+    # Show difference as B/W Image
     @staticmethod
     def compare_images_bw(expected_image, actual_image, result_destination=None):
         # Convert images to grayscale
@@ -38,7 +38,7 @@ class ImageComparisonUtil:
 
         return similarity_index
 
-    # show difference as individual red boxes
+    # Show difference as individual red boxes
     @staticmethod
     def compare_images_sep(expected_image, actual_image, result_destination=None):
         # Convert images to grayscale
@@ -65,11 +65,11 @@ class ImageComparisonUtil:
                 cv2.rectangle(actual_image, (x, y), (x + w, y + h), (0, 0, 255), 2)  # Red rectangles
                 
             # Save the resulting image
-            cv2.imwrite(result_destination, actual_image)
+            ImageComparisonUtil.save_image(result_destination, actual_image)
 
         return similarity_index
 
-    # show difference as a complete rectangular box
+    # Show difference as a complete rectangular box
     @staticmethod
     def compare_images(expected_image, actual_image, result_destination=None):
         # Convert images to grayscale
@@ -90,31 +90,31 @@ class ImageComparisonUtil:
             # Find contours of differences
             contours, _ = cv2.findContours(thresholded_diff, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
             
-            # Combine all bounding rectangles into one
-            combined_rect = cv2.boundingRect(np.concatenate(contours))
-            x, y, w, h = combined_rect
-            
-            # Draw a rectangle around the combined differences
-            cv2.rectangle(actual_image, (x, y), (x + w, y + h), (0, 0, 255), 2)  # Red rectangle
+            if contours:
+                # Combine all bounding rectangles into one
+                combined_rect = cv2.boundingRect(np.concatenate(contours))
+                x, y, w, h = combined_rect
+                
+                # Draw a rectangle around the combined differences
+                cv2.rectangle(actual_image, (x, y), (x + w, y + h), (0, 0, 255), 2)  # Red rectangle
                 
             # Save the resulting image
-            cv2.imwrite(result_destination, actual_image)
+            ImageComparisonUtil.save_image(result_destination, actual_image)
 
         return similarity_index
 
     @staticmethod
-    def check_mismatch(expected_image, actual_image):
+    def check_mismatch(expected_image_path, actual_image_path):
+        expected_image = ImageComparisonUtil.read_image(expected_image_path)
+        actual_image = ImageComparisonUtil.read_image(actual_image_path)
         similarity_index = ImageComparisonUtil.compare_images(expected_image, actual_image)
         # If similarity index is less than 1.0, there is a mismatch
-        if similarity_index < 1.0:
-            return True
-        return False
-
+        return similarity_index < 1.0
 
     @staticmethod
-    def check_match(expected_image, actual_image):
+    def check_match(expected_image_path, actual_image_path):
+        expected_image = ImageComparisonUtil.read_image(expected_image_path)
+        actual_image = ImageComparisonUtil.read_image(actual_image_path)
         similarity_index = ImageComparisonUtil.compare_images(expected_image, actual_image)
         # If similarity index is 1.0, images are identical
-        if similarity_index == 1.0:
-            return True
-        return False
+        return similarity_index == 1.0
