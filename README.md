@@ -20,6 +20,15 @@ Developed with Python utilizing the OpenCV library, this program compares two im
 ```python
 pip install visual-comparison
 ```
+## Configuration
+
+All these methods can be combined based on your requirements.
+| *Method* | *Description* |
+| --- | --- |
+| `read_image` | Function to read image from the specified path. This can load both expected and actual images that need to be compared.  |
+| `compare_images` | Function to compare two images. This function takes three arguments: `expected_image`, `actual_image`, and `result_destination`. It highlights the differences between the images with red rectangles. |
+| `check_match` | Function to check if two images match. This function takes two arguments: `expected_image` and `actual_image`. It returns `true` if both images are identical. |
+| `check_mismatch` | Function to check if two images do not match. This function takes two arguments: `expected_image` and `actual_image`. It returns `true` if the images are different. |
 
 ## To compare two images through visual-comparison module
 
