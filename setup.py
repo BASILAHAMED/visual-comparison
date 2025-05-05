@@ -26,11 +26,14 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
     ],
     keywords="visual compare image diff testing",
     packages=find_packages(exclude=("tests",)),
     install_requires=[
-        "numpy",
+        "numpy~=1.26.4",
         "opencv-python",
         "scikit-image"
     ],
