@@ -9,7 +9,7 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
 
 setup(
     name="visual-comparison",
-    version="1.0.2.8",
+    version="1.0.4",
     description="Image Comparison Tool",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -30,9 +30,9 @@ setup(
     keywords="visual compare image diff testing",
     packages=find_packages(exclude=("tests",)),
     install_requires=[
-        "numpy~=1.26.4",
-        "opencv-python~=4.9.0.80",
-        "scikit-image~=0.23.1"
+        "numpy",
+        "opencv-python",
+        "scikit-image"
     ],
     zip_safe=False,
 )
