@@ -1,0 +1,16 @@
+.idea/
+.tmp/
+release-build/
+visual_comparison/
+.pytest_cache/
+.coverage
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+build/
+dist/
+result.png
+test_result.png
+tmp*/

@@ -1,96 +1,113 @@
-![logo-trans](https://github.com/BASILAHAMED/visual-comparison/raw/main/logo.png)
+![visual-comparison logo](https://github.com/BASILAHAMED/visual-comparison/raw/main/logo.png)
 
 [![PyPI version](https://badge.fury.io/py/visual-comparison.svg)](https://badge.fury.io/py/visual-comparison)
-![Python](https://img.shields.io/badge/Python-Selenium-blue)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BASILAHAMED/visual-comparison/pulls)
 [![License](https://img.shields.io/github/license/BASILAHAMED/visual-comparison.svg)](https://github.com/BASILAHAMED/visual-comparison/blob/main/LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 
-## About
-Developed with Python utilizing the OpenCV library, this program compares two images of identical sizes, visually highlighting their differences by drawing red rectangles. Offering flexibility for various automation Quality Assurance (QA) tests, especially visual regression testing. [Selenium-Reference](https://github.com/BASILAHAMED/visual-testing.git)
+# visual-comparison
 
-**Key Features:**
+`visual-comparison` is a lightweight Python library for visual regression testing. It compares two images of the same size, computes a structural similarity score, and can generate output images that highlight visual differences.
 
-* Utilizes standard Python language and specific modules for implementation.
-* Generates an output comprising copies of the 'actual' images, with discrepancies delineated by red rectangles.
-* This tool serves as a valuable asset for automated visual regression testing, facilitating precise visual comparisons to ensure the integrity and accuracy of image-based applications. 
+It is designed for automation and QA workflows where you want a simple API, reliable packaging, and compatibility with current NumPy releases.
 
-## Usage
+## Features
 
-#### Installation
-```python
+- Supports modern Python versions from 3.9 through 3.13.
+- Compatible with current NumPy releases, including NumPy 2.x.
+- Compares images from file paths or in-memory NumPy arrays.
+- Produces SSIM-based similarity scores.
+- Can save either a combined diff box or separate diff boxes.
+- Useful for UI testing, screenshot comparison, and visual regression checks.
+
+## Installation
+
+```bash
 pip install visual-comparison
 ```
-## Configuration
 
-All these methods can be combined based on your requirements.
-| *Method* | *Description* |
+For local development:
+
+```bash
+pip install -e .
+```
+
+## Quick Start
+
+```python
+from visual_comparison import ImageComparisonUtil
+
+expected = ImageComparisonUtil.read_image("expected.png")
+actual = ImageComparisonUtil.read_image("actual.png")
+
+similarity = ImageComparisonUtil.compare_images(
+    expected,
+    actual,
+    "result.png",
+)
+
+print(f"Similarity Index: {similarity}")
+```
+
+## API
+
+| Method | Description |
 | --- | --- |
-| `read_image` | Function to read image from the specified path. This can load both expected and actual images that need to be compared.  |
-| `compare_images` | Function to compare two images. This function takes three arguments: `expected_image`, `actual_image`, and `result_destination`. It highlights the differences between the images with red rectangles. |
-| `check_match` | Function to check if two images match. This function takes two arguments: `expected_image` and `actual_image`. It returns `true` if both images are identical. |
-| `check_mismatch` | Function to check if two images do not match. This function takes two arguments: `expected_image` and `actual_image`. It returns `true` if the images are different. |
+| `read_image(path)` | Load an image from disk. |
+| `save_image(path, image)` | Save an image to disk. |
+| `compare_images(expected, actual, result_destination=None)` | Return the SSIM score and optionally save one combined red bounding box around changed regions. |
+| `compare_images_sep(expected, actual, result_destination=None)` | Return the SSIM score and optionally save separate bounding boxes for each changed region. |
+| `compare_images_bw(expected, actual, result_destination=None)` | Return the SSIM score and optionally save a black-and-white diff image. |
+| `check_match(expected, actual)` | Return `True` when images are effectively identical. |
+| `check_mismatch(expected, actual)` | Return `True` when images differ. |
 
-## To compare two images through visual-comparison module
+## Repository Structure
 
-#### 1. Sample Code to get Similarity Index:
-
-[Get Similarity Index](https://github.com/BASILAHAMED/visual-comparison/blob/main/get_similarity_index.py)
-
-```python
-    # Using ImageComparisonUtil to get similarity index and save output image as result.png
-    # Load images to be compared
-    expected_image = ImageComparisonUtil.read_image("expected.png")
-    actual_image = ImageComparisonUtil.read_image("actual.png")
-    
-    # Provide the path to save output image
-    result_destination = "result.png"
-    
-    # Compare the images, print the similarity index and save it as result.png
-    similarity_index = ImageComparisonUtil.compare_images(expected_image, actual_image, result_destination)
-    print("Similarity Index:", similarity_index)
+```text
+.
+|-- src/visual_comparison/   # Library source
+|-- tests/                   # Unit tests
+|-- examples/                # Example scripts
+|-- sample_images/           # Demo images
+|-- .github/workflows/       # CI configuration
+|-- README.md
+|-- LICENSE
+|-- pyproject.toml
+|-- requirements.txt
+`-- setup.py
 ```
 
-#### 2. Sample Code to assert match/mismatch:
+## Examples
 
-[Assert Match/Mismatch](https://github.com/BASILAHAMED/visual-comparison/blob/main/asserting_match.py)
+- Similarity example: `examples/get_similarity_index.py`
+- Match and mismatch assertions: `examples/asserting_match.py`
 
-```python
-    # Using ImageComparisonUtil
-    # Load images to be compared
-    expected_image = ImageComparisonUtil.read_image("expected.png")
-    actual_image = ImageComparisonUtil.read_image("actual.png")
-    
-    # Asserting both images
-    match_result = ImageComparisonUtil.check_match(expected_image, actual_image)
-    assert match_result
+## Demo Images
+
+Basic comparison:
+
+- Expected: ![expected](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/basic%20comparison/expected.png)
+- Actual: ![actual](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/basic%20comparison/actual.png)
+- Result: ![result](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/basic%20comparison/result.png)
+
+Colour comparison:
+
+- Expected: ![expected-colour](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/colour%20comparison/expected.jpg)
+- Actual: ![actual-colour](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/colour%20comparison/actual.png)
+- Result: ![result-colour](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/colour%20comparison/result.png)
+
+## Development
+
+Install dependencies and run the tests:
+
+```bash
+pip install -r requirements.txt
+python -m unittest discover -v
 ```
 
-## Demo
-1. Demo shows how **`basic image comparison`** works.
+## Contributing
 
-### Expected Image
-![expected](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/basic%20comparison/expected.png)
+Contributions are welcome through issues and pull requests. If you are proposing an API or packaging change, please include a test update alongside it.
 
-### Actual Image
-![actual](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/basic%20comparison/actual.png) 
+## License
 
-### Result
-![result](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/basic%20comparison/result.png)
-
-
-2. Demo shows how **`colour comparison`** works.
-### Expected Image
-![expected](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/colour%20comparison/expected.jpg)
-
-### Actual Image
-![actual](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/colour%20comparison/actual.png)
-
-### Result
-![result](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/colour%20comparison/result.png)
-
-### Support and Contributions
-If you find this project useful, please consider giving it a star! ⭐ Your support is greatly appreciated. If you have any ideas for improvements or would like to contribute, we welcome your input and collaboration. Feel free to open an issue or submit a pull request. Thanks for your support!
-
-### Buy me a Coffee
-https://buymeacoffee.com/basilhameed
-
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
