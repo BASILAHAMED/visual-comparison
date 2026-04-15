@@ -1,7 +1,7 @@
 .idea/
 .tmp/
 release-build/
-visual_comparison/
+/visual_comparison/
 .pytest_cache/
 .coverage
 __pycache__/
