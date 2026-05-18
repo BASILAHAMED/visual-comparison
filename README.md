@@ -83,17 +83,17 @@ print(f"Similarity Index: {similarity}")
 
 ## Demo Images
 
-Basic comparison:
+### Basic Comparison
 
-- Expected: ![expected](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/basic%20comparison/expected.png)
-- Actual: ![actual](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/basic%20comparison/actual.png)
-- Result: ![result](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/basic%20comparison/result.png)
+| Expected | Actual | Result |
+| --- | --- | --- |
+| <img src="https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/basic%20comparison/expected.png" alt="Expected basic comparison image" width="260" /> | <img src="https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/basic%20comparison/actual.png" alt="Actual basic comparison image" width="260" /> | <img src="https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/basic%20comparison/result.png" alt="Result basic comparison image" width="260" /> |
 
-Colour comparison:
+### Colour Comparison
 
-- Expected: ![expected-colour](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/colour%20comparison/expected.jpg)
-- Actual: ![actual-colour](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/colour%20comparison/actual.png)
-- Result: ![result-colour](https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/colour%20comparison/result.png)
+| Expected | Actual | Result |
+| --- | --- | --- |
+| <img src="https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/colour%20comparison/expected.jpg" alt="Expected colour comparison image" width="260" /> | <img src="https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/colour%20comparison/actual.png" alt="Actual colour comparison image" width="260" /> | <img src="https://github.com/BASILAHAMED/visual-comparison/raw/main/sample_images/colour%20comparison/result.png" alt="Result colour comparison image" width="260" /> |
 
 ## Development
 
